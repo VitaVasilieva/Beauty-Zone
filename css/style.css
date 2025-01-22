@@ -1,0 +1,182 @@
+/* play-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v19-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* play-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v19-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v32-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v32-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --color-primary-dark: #011c44;
+  --color-primary-light: #2b7fff;
+  --color-primary-white: #ffffff;
+  --color-secondary-dray: #747272;
+
+  --font-family: "roboto", san-serif;
+  --second-family: "play", san-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-primary-dark);
+}
+
+h1,
+h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.hidden {
+  position: absolute;
+  left: -1000px;
+  left: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* header */
+.header-link {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+.header-link:hover {
+  color: var(--color-primary-light);
+}
+
+/* Hero-section */
+.hero-title {
+  font-size: 140px;
+  text-transform: capitalize;
+  color: var(--color-primary-light);
+}
+
+.button {
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-light);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+.hero-text {
+  font-size: 12px;
+  color: var(--color-secondary-dray);
+}
+
+/* about-us-section */
+.about-us-title {
+  font-size: 64px;
+}
+
+.about-us-accent {
+  text-transform: capitalize;
+}
+
+.about-us-text {
+  font-size: 22px;
+}
+
+.about-us-accent {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+/* advantages-section */
+.title {
+  font-size: 64px;
+  text-align: center;
+}
+.accent {
+  color: var(--color-primary-light);
+}
+
+/* procedures-section */
+.procedures-text {
+  font-size: 22px;
+  text-align: center;
+}
+
+/* contacts-section */
+
+/* footer */
+
+.footer {
+  background-color: var(--color-primary-dark);
+}
+
+.footer-link {
+  font-size: 16px;
+  color: var(--color-primary-white);
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: var(--color-primary-light);
+}
+
+.address-link {
+  font-size: 16px;
+  text-decoration: none;
+  font-style: normal;
+  color: var(--color-primary-white);
+}
+
+.footer-terms {
+  font-size: 16px;
+  color: var(--color-primary-white);
+  text-decoration: none;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  color: var(--color-secondary-dray);
+  font-style: normal;
+}
