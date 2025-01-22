@@ -117,6 +117,7 @@ ul {
 }
 
 .about-us-accent {
+  color: var(--color-primary-light);
   text-transform: capitalize;
 }
 
