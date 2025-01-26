@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="conteiner">
             <nav class="header-nav">
                 <a href="./index.html">
@@ -54,7 +54,7 @@
                 <p class="secondary-title">Косметологічна клініка</p>
                 <h1 class="hero-title">beauty
                     zone</h1>
-                <button class="button" type="button">Замовити дзвінок</button>
+                <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
                 <p class="hero-text">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
             </div>
         </section>
@@ -78,19 +78,27 @@
                             молодість.
                             З нами краса назавжди!</p>
                     </div>
-                    <div>
-                        <img src="./img/Before-procedure.jpg" alt="Before-procedure">
-                        <svg class="icon-star" width="64" height="64">
-                            <use href="./img/icons-defs.svg#icon-Star-1"></use>
-                        </svg>
-                        <svg class="icon-star-three" width="16" height="16">
-                            <use href="./img/icons-defs.svg#icon-Star-3"></use>
-                        </svg>
-                        <svg class="icon-star-two" width="40" height="40">
-                            <use href="./img/icons-defs.svg#icon-Star-2"></use>
-                        </svg>
-                        <img src="./img/After-procedure.jpg" alt="After-procedure">
-                    </div>
+                    <ul class="about-us-list">
+                        <li class="about-us-icon">
+                            <img src="./img/Before-procedure.jpg" alt="Before-procedure">
+                            <svg class="icon-star" width="64" height="64">
+                                <use href="./img/icons-defs.svg#icon-Star-1"></use>
+                            </svg>
+                            <svg class="icon-star-three" width="16" height="16">
+                                <use href="./img/icons-defs.svg#icon-Star-3"></use>
+                            </svg>
+                            <svg class="icon-star-two" width="40" height="40">
+                                <use href="./img/icons-defs.svg#icon-Star-2"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <img class="about-us-img" src="./img/After-procedure.jpg" alt="After-procedure">
+                        </li>
+                    </ul>
+
+
+
+
                 </div>
             </div>
         </section>
@@ -149,7 +157,7 @@
                             <article class="procedures-list">
                                 <h3 class="hidden">Процедури</h3>
                                 <img class="procedures-img" src="./img/Mask-procedure.png" alt="Mask-procedure">
-                                <p class="procedures-text">Маски
+                                <p class="procedures-text">Маски <br>
                                     для обличчя</p>
                             </article>
                         </li>
@@ -158,7 +166,7 @@
                                 <h3 class="hidden">Процедури</h3>
                                 <img class="procedures-img" src="./img/Injection-procedure.png"
                                     alt="Injection-procedure">
-                                <p class="procedures-text">Ін'єкції
+                                <p class="procedures-text">Ін'єкції <br>
                                     для обличчя</p>
                             </article>
                         </li>
@@ -166,13 +174,13 @@
                             <article class="procedures-list">
                                 <h3 class="hidden">Процедури</h3>
                                 <img class="procedures-img" src="./img/Cleaning-procedure.png" alt="Cleaning-procedure">
-                                <p class="procedures-text">Очищення
+                                <p class="procedures-text">Очищення <br>
                                     обличчя</p>
                             </article>
                         </li>
                     </ul>
                     <button class="carousol-button" type="button">
-                        <svg class="carousol-arrow" width="16" height="16">
+                        <svg class="carousol-arrow rorate" width="16" height="16">
                             <use href="./img/icons-defs.svg#icon-Arrow"></use>
                         </svg>
                     </button>
@@ -183,13 +191,45 @@
         <section class="contacts-section" id="contacts">
             <div class="conteiner">
                 <h2 class="title">Як нас <span class="accent">знайти</span></h2>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475609857368!2d30.772648476064045!3d50.506716783311504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2spl!4v1737563177023!5m2!1suk!2spl"
-                    width="605" height="480" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contacts-conteiner">
+                    <div class="contacts-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475609857368!2d30.772648476064045!3d50.506716783311504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2spl!4v1737563177023!5m2!1suk!2spl"
+                            width="605" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contacts-form">
+                        <h3 class="contact-text">Запишіться <span class="contact-accent">безкоштовно</span>
+                            та отримайте подарунок</h3>
+                        <form name="contact-form">
+                            <label class="hidden" for="uzer-name">Ваше ім'я та прізвище</label>
+                            <input class="contact-form-input" type="text" id="uzer-name" name="uzer-name"
+                                placeholder="Ваше ім'я та прізвище" pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+                                title="Формат: Андрій Петров" required>
+
+                            <label class="hidden" for="uzer-tel">Ваш номер телефону</label>
+                            <input class="contact-form-input" type="tel" id="uzer-tel" name="uzer-tel"
+                                placeholder="Ваш номер телефону" pattern="^\+[0-9]{12}" title="Формат: +380668185885"
+                                required>
+
+                            <label class="hidden" for="uzer-email">Ваша електронна пошта</label>
+                            <input class="contact-form-input" type="email" id="uzer-email" name="uzer-email"
+                                placeholder="Ваша електронна пошта"
+                                pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                title="Формат: jsmith@gmail.com" required>
+                            <button class="button button-form" type="submit">Записатись безкоштовно</button>
+                            <p class="contact-form-terms">Натискаючи на кнопку я погоджуюсь <a class="contact-form-link"
+                                    href="">з політикою
+                                    конфіденційності</a></p>
+                        </form>
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+
 
     <footer class="footer">
         <div class="conteiner">
@@ -215,38 +255,78 @@
                         <li><a class="address-link" href="https://maps.app.goo.gl/6dvYaCcJeTPvyPqn9"
                                 target="_blank">Україна, м.
                                 Київ,
-                                вул. Тараса Шевченка 5</a></li>
-                        <li>
-                            <a href="">
-                                <svg class="footer-icon" width="32" height="32">
-                                    <use href="./img/icons-defs.svg#icon-Phone"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg class="footer-icon" width="32" height="32">
-                                    <use href="./img/icons-defs.svg#icon-Facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <svg class="footer-icon" width="32" height="32">
-                                    <use href="./img/icons-defs.svg#icon-Instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
+                                <br> вул. Тараса Шевченка 5</a></li>
+
+                        <div class="footer-link-icon">
+                            <li>
+                                <a href="">
+                                    <svg class="footer-icon" width="32" height="32">
+                                        <use href="./img/icons-defs.svg#icon-Phone"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="footer-icon" width="32" height="32">
+                                        <use href="./img/icons-defs.svg#icon-Facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="footer-icon" width="32" height="32">
+                                        <use href="./img/icons-defs.svg#icon-Instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </div>
                     </ul>
                     <div class="footer-info">
                         <a class="footer-terms" href="">Політика конфіденційності</a>
                         <p class="footer-copyright">&copy; 2022 Дані захищені</p>
                     </div>
                 </address>
-
             </div>
-
     </footer>
+
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal-button modal-btn-close" type="button">
+                <svg class="footer-icon" width="32" height="32">
+                    <use href="./img/icons-defs.svg#icon-x"></use>
+                </svg>
+            </button>
+            <h2 class="modal-title title ">Замовити дзвінок</h2>
+            <p class="contact-text modal-text">Запишіться <span class="contact-accent">безкоштовно</span>
+                та отримайте подарунок</p>
+            <form name="contact-form" autocomplete="off">
+                <label class="hidden" for="uzer-name">Ваше ім'я та прізвище</label>
+                <input class="contact-form-input modal-form-input" type="text" id="uzer-name" name="uzer-name"
+                    placeholder="Ваше ім'я та прізвище" pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$"
+                    title="Формат: Андрій Петров" required>
+
+                <label class="hidden" for="uzer-tel">Ваш номер телефону</label>
+                <input class="contact-form-input modal-form-input" type="tel" id="uzer-tel" name="uzer-tel"
+                    placeholder="Ваш номер телефону" pattern="^\+[0-9]{12}" title="Формат: +380668185885"
+                    pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Формат: jsmith@gmail.com"
+                    required>
+
+                <label class="hidden" for="uzer-email">Ваша електронна пошта</label>
+                <input class="contact-form-input modal-form-input" type="email" id="uzer-email" name="uzer-email"
+                    placeholder="Ваша електронна пошта" pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    title="Формат: jsmith@gmail.com" required>
+                <button class="button button-form" type="submit">Записатись безкоштовно</button>
+                <p class="contact-form-terms">Натискаючи на кнопку я погоджуюсь <a class="contact-form-link" href="">з
+                        політикою
+                        конфіденційності</a></p>
+            </form>
+
+
+        </div>
+    </div>
+
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
