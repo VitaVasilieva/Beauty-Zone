@@ -1,0 +1,98 @@
+.footer {
+  position: relative;
+  padding: 56px 0;
+  background-color: var(--color-primary-dark);
+  background-image: url(../img/lines.png);
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    background-image: url(../img/cosmetics-image.svg);
+    background-repeat: no-repeat;
+    width: 278px;
+    height: 150px;
+  }
+
+  &__conteiner {
+    display: flex;
+    gap: 20px;
+  }
+  &__nav {
+    display: flex;
+    gap: 20px;
+    flex-basis: 50%;
+  }
+  &__logo {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+  &__list {
+    flex-basis: 50%;
+    flex-grow: 1;
+  }
+  &__link {
+    font-size: 16px;
+    color: var(--color-primary-white);
+    text-decoration: none;
+    margin-bottom: 16px;
+    transition: color 0.2s;
+  }
+
+  &__link:hover {
+    color: var(--color-primary-light);
+  }
+
+  &__address {
+    display: flex;
+    gap: 35px;
+    flex-basis: 50%;
+  }
+
+  &__address-list {
+    flex-basis: 50%;
+    flex-grow: 1;
+    margin: 0;
+  }
+  &__address-link {
+    font-size: 16px;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--color-primary-white);
+    margin-bottom: 16px;
+    transition: color 0.2s;
+  }
+  &__address-link:hover,
+  &__terms:hover {
+    color: var(--color-primary-light);
+  }
+
+  &__link-icon {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__icon {
+    fill: var(--color-primary-white);
+  }
+  &__info {
+    flex-basis: 50%;
+    flex-grow: 1;
+    margin: 0;
+  }
+  &__terms {
+    font-size: 16px;
+    color: var(--color-primary-white);
+    text-decoration: none;
+    font-style: normal;
+    margin-bottom: 16px;
+    transition: color 0.2s;
+  }
+
+  &__copyright {
+    font-size: 13px;
+    color: var(--color-secondary-dray);
+    font-style: normal;
+  }
+}

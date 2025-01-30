@@ -1,0 +1,154 @@
+.about-us-section {
+  position: relative;
+  padding: 28px;
+
+  @media screen and (min-width: $bp-desktop) {
+    position: relative;
+    padding-bottom: 88px;
+  }
+
+  &__conteiner {
+    display: flex;
+    gap: 32px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      gap: 32px;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+      line-height: 1.1;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__accent {
+    color: var(--color-primary-light);
+    text-transform: capitalize;
+  }
+
+  &__text {
+    width: 320px;
+    line-height: 1;
+    font-size: 18px;
+    &--text {
+      margin-bottom: 18px;
+    }
+    &--indentation {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 709px;
+      line-height: 1.7;
+      font-size: 22px;
+      &--text {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__accent {
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+
+  &__list {
+    flex-shrink: 0;
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+  &__icon {
+    position: relative;
+  }
+  &__icon-star {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    fill: var(--color-primary-dark);
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: translate(-20px, 20px);
+    }
+    25% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1.4);
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: scale(1.4);
+    }
+    100% {
+      transform: translate(-20px, 20px);
+    }
+  }
+
+  &__icon-star-three {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    fill: var(--color-secondary-dray);
+  }
+
+  &__icon-star-two {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    fill: var(--color-primary-light);
+    animation-name: scale;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1.4);
+    }
+    75% {
+      transform: scale(1.6);
+    }
+    100% {
+      transform: scale(1.8);
+    }
+  }
+
+  &__icon-star-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    fill: var(--color-primary-light);
+
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
+  }
+
+  &__img {
+    padding-left: 160px;
+    width: 100%;
+    height: 326px;
+  }
+}

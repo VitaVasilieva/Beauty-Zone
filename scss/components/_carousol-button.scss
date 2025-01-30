@@ -1,0 +1,23 @@
+.carousol-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  transition-property: background-color, fill;
+  transition-duration: 0.2s;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: var(--color-primary-light);
+    fill: var(--color-primary-white);
+    border: 1px solid var(--color-primary-light);
+  }
+  &__transform {
+    transform: rotate(180deg);
+  }
+}

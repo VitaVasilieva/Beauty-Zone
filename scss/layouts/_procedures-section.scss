@@ -1,0 +1,51 @@
+.procedures-section {
+  padding: 48px 0 48px 0;
+
+  &__conteiner {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    overflow: hidden;
+  }
+
+  &__overflow {
+    overflow: hidden;
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__card {
+    display: flex;
+    position: relative;
+    width: 344px;
+    height: 456px;
+    border-radius: 4px 120px;
+    padding: 32px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(1, 28, 68, 0) 47.4%,
+      rgba(1, 28, 68, 0.73) 82.66%,
+      #011c44 99.06%
+    );
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__text {
+    text-align: center;
+    align-self: self-end;
+    flex-grow: 1;
+    color: var(--color-primary-white);
+    font-size: 22px;
+  }
+}

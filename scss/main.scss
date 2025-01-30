@@ -1,0 +1,34 @@
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./base";
+@import "./utils/utils";
+@import "./components/conteiner";
+@import "./layouts/header";
+@import "./components/carousol-button";
+/* Hero-section */
+@import "./layouts/hero-section";
+@import "./components/button";
+
+@import "./layouts/mobile-menu";
+/* about-us-section */
+@import "./layouts/about-us-section";
+/* advantages-section */
+@import "./layouts/advantages-section";
+@import "./components/advantages-conteiner";
+/* title */
+@import "./utils/title";
+/* title */
+/* procedures-section */
+@import "./layouts/procedures-section";
+@import "./components/pagination";
+/* contacts-section */
+@import "./layouts/contacts-section";
+@import "./components/contact-form";
+
+/* footer */
+
+@import "./layouts/footer";
+
+/* modal */
+
+@import "./layouts/modal";

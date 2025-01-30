@@ -1,0 +1,54 @@
+.backdrop {
+  position: fixed;
+  background-color: darkgray;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 724px;
+  height: 100%;
+  max-height: 680px;
+  background-color: var(--color-primary-dark);
+  border-radius: 32px;
+  background-image: url(/img/lines.png);
+  overflow: auto;
+  padding: 42px 0;
+
+  &__button-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__title {
+    color: var(--color-primary-white);
+    width: 435px;
+    margin: 0 auto 40px;
+    line-height: 1.1;
+  }
+
+  &__text {
+    margin: 0 auto 32px;
+  }
+
+  &__input {
+    margin-bottom: 24px;
+  }
+}

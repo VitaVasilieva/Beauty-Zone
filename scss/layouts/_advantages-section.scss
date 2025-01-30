@@ -1,0 +1,23 @@
+.advantages-section {
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1),
+      rgba(135, 206, 250, 0)
+    ),
+    url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 88px 0 48px 0;
+
+  &__size {
+    width: 210px;
+    line-height: 1.1;
+    margin: 0 auto 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 432px;
+      line-height: 1.1;
+      margin: 0 auto 48px;
+    }
+  }
+}
