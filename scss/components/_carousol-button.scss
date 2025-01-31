@@ -17,7 +17,7 @@
     fill: var(--color-primary-white);
     border: 1px solid var(--color-primary-light);
   }
-  &__transform {
-    transform: rotate(180deg);
-  }
+}
+.transform {
+  transform: rotate(180deg);
 }

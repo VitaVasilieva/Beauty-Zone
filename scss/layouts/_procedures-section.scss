@@ -1,26 +1,19 @@
 .procedures-section {
-  padding: 48px 0 48px 0;
+  padding: 20px 0 20px 0;
 
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px 0 48px 0;
+  }
   &__conteiner {
     display: flex;
     align-items: center;
     gap: 32px;
-    overflow: hidden;
-  }
-
-  &__overflow {
-    overflow: hidden;
-  }
-
-  &__list {
-    display: flex;
-    gap: 16px;
   }
 
   &__card {
     display: flex;
     position: relative;
-    width: 344px;
+    // width: 344px;
     height: 456px;
     border-radius: 4px 120px;
     padding: 32px;
@@ -48,4 +41,16 @@
     color: var(--color-primary-white);
     font-size: 22px;
   }
+
+  &__carousol-button {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+}
+
+.overflow {
+  overflow: hidden;
 }

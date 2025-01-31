@@ -3,13 +3,20 @@
     display: block;
     margin: 0 auto 16px;
     width: 100%;
-    max-width: 310px;
-    height: 52px;
-    border: 2px solid var(--color-primary-light);
-    border-radius: 32px;
+    max-width: 241px;
+    height: 46px;
+    border: 1px solid var(--color-primary-light);
+    border-radius: 24px;
     background-color: transparent;
     padding: 16px 32px;
     transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 310px;
+      height: 52px;
+      border: 2px solid var(--color-primary-light);
+      border-radius: 32px;
+    }
   }
 
   &__input::placeholder {
@@ -25,7 +32,14 @@
   &__button-form {
     display: block;
     margin: 0 auto 8px;
-    width: 281px;
+    width: 241px;
+    height: 44px;
+    font-size: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 281px;
+      height: 53px;
+    }
   }
 
   &__button-form:hover {

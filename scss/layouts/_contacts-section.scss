@@ -1,30 +1,67 @@
 .contacts-section {
-  padding: 48px 0 96px 0;
+  padding-top: 20px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 48px 0 96px 0;
+  }
 
   &__conteiner {
     display: flex;
+    flex-direction: column;
     gap: 32px;
     width: 100%;
-    max-width: 1060px;
+
     margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 32px;
+      width: 100%;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
   }
 
-  &__map {
-    flex-shrink: 0;
-    border-radius: 35px;
-  }
+  // &__map {
+  //   flex-shrink: 0;
+  //   border-radius: 35px;
+  // }
 
   &__map-style {
+    flex-grow: 1;
     border: 0;
     border-radius: 35px;
+    height: 232px;
+    margin: 0 -24px;
+    order: 2;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      height: 480px;
+      width: 605px;
+      order: 1;
+    }
   }
 
   &__form {
-    width: 422px;
-    height: 482px;
+    width: 320px;
+    height: 434px;
     background-color: var(--color-primary-dark);
-    border-radius: 32px;
+    border-radius: 24px;
     background-image: url(../img/lines.png);
+    order: 1;
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 422px;
+      height: 482px;
+      background-color: var(--color-primary-dark);
+      border-radius: 32px;
+      background-image: url(../img/lines.png);
+      order: 2;
+    }
   }
 
   &__text {
@@ -33,7 +70,11 @@
     text-align: center;
     color: var(--color-primary-white);
     width: 274px;
-    margin: 48px auto 32px;
+    margin: 42px auto 24px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 48px auto 32px;
+    }
   }
 
   &__accent {

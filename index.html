@@ -52,9 +52,6 @@
                     </button>
                 </div>
             </nav>
-
-
-
         </div>
 
         <div class="mobile-menu">
@@ -63,14 +60,52 @@
                     <use href="./img/icons-defs.svg#icon-x"></use>
                 </svg>
             </button>
+            <nav class="mobile-menu__nav">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="logo">
+                </a>
+                <ul class="mobile-menu__list ">
+                    <li><a class="mobile-menu__link header__link" href="#about-us">Про нас</a></li>
+                    <li><a class="mobile-menu__link header__link" href="#advantages">Чому ми</a></li>
+                    <li><a class="mobile-menu__link header__link" href="#procedures">Наші процедури</a></li>
+                    <li><a class="mobile-menu__link header__link" href="#contacts">Контакти</a></li>
+                </ul>
+                <ul class="mobile-menu__address">
+                    <li>
+                        <a href="">
+                            <svg width="32" height="32">
+                                <use href="./img/icons-defs.svg#icon-Phone"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg width="32" height="32">
+                                <use href="./img/icons-defs.svg#icon-Facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=""><svg width="32" height="32">
+                                <use href="./img/icons-defs.svg#icon-Instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div>
+                    <button class="header__burger menu-btn-open" type="button">
+                        <svg class="header__burger-icon" width="32" height="32">
+                            <use href="./img/icons-defs.svg#icon-burger"></use>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
         </div>
     </header>
 
     <main>
         <section class="hero-section">
-
             <div class="conteiner">
-
                 <p class="hero-section__secondary-title">Косметологічна клініка</p>
                 <h1 class="hero-section__hero-title">beauty
                     zone</h1>
@@ -79,18 +114,6 @@
                     <p class="hero-section__hero-text">Запишись та отримай безкоштовну консультацію нашого
                         косметолога
                     </p>
-                </div>
-
-                <div class="hero-section__wave-section">
-
-                    <!-- <svg width="100%" height="20px" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg"
-                        class="hero-section__wave">
-                        <path
-                            d="M 0,400 L 0,150 C 190.93333333333334,178.13333333333333 381.8666666666667,206.26666666666665 553,208 C 724.1333333333333,209.73333333333335 875.4666666666667,185.0666666666667 1020,196 C 1164.5333333333333,206.9333333333333 1302.2666666666667,253.46666666666664 1440,300 L 1440,400 L 0,400 Z"
-                            stroke="none" stroke-width="0" fill="#ffffff" fill-opacity="1"></path>
-                    </svg> -->
-
-                    </svg>
                 </div>
             </div>
         </section>
@@ -192,13 +215,41 @@
 
                 <h2 class="title">Наші <span class="accent">процедури</span></h2>
                 <div class="procedures-section__conteiner">
-                    <button class="carousol-button carousol-button-prev" type="button">
+                    <button class="procedures-section__carousol-button carousol-button carousol-button-prev"
+                        type="button">
                         <svg width="16" height="16">
                             <use href="./img/icons-defs.svg#icon-Arrow"></use>
                         </svg>
                     </button>
-                    <div class="procedures-section__overflow swiper-container">
-                        <ul class="procedures-section__list swiper-wrapper">
+                    <div class="swiper-container overflow">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <article class="procedures-section__card">
+                                    <h3 class="hidden">Процедури</h3>
+                                    <img class="procedures-section__img" src="./img/Mask-procedure.png"
+                                        alt="Mask-procedure">
+                                    <p class="procedures-section__text">Маски <br>
+                                        для обличчя</p>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="procedures-section__card">
+                                    <h3 class="hidden">Процедури</h3>
+                                    <img class="procedures-section__img" src="./img/Injection-procedure.png"
+                                        alt="procedures-section__procedure">
+                                    <p class="procedures-section__text">Ін'єкції <br>
+                                        для обличчя</p>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="procedures-section__card">
+                                    <h3 class="hidden">Процедури</h3>
+                                    <img class="procedures-section__img" src="./img/Cleaning-procedure.png"
+                                        alt="Cleaning-procedure">
+                                    <p class="procedures-section__text">Очищення <br>
+                                        обличчя</p>
+                                </article>
+                            </li>
                             <li class="swiper-slide">
                                 <article class="procedures-section__card">
                                     <h3 class="hidden">Процедури</h3>
@@ -228,13 +279,14 @@
                             </li>
                         </ul>
                         <div class="pagination">
-                            <button class="pagination__button" type="button" aria-label="Go to slide 1"></button>
-                            <button class="pagination__button" type="button" aria-label="Go to slide 2"></button>
-                            <button class="pagination__button" type="button" aria-label="Go to slide 3"></button>
-                            <button class="pagination__button" type="button" aria-label="Go to slide 4"></button>
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
                         </div>
                     </div>
-                    <button class="carousol-button carousol-button__transform carousol-button-next" type="button">
+                    <button class="procedures-section__carousol-button carousol-button transform carousol-button-next"
+                        type="button">
                         <svg width="16" height="16">
                             <use href="./img/icons-defs.svg#icon-Arrow"></use>
                         </svg>
@@ -243,16 +295,15 @@
             </div>
         </section>
 
-        <!-- <section class="contacts-section" id="contacts">
+        <section class="contacts-section" id="contacts">
             <div class="conteiner">
                 <h2 class="title">Як нас <span class="accent">знайти</span></h2>
                 <div class="contacts-section__conteiner">
-                    <div class="contacts-section__map">
-                        <iframe class="contacts-section__map-style"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475609857368!2d30.772648476064045!3d50.506716783311504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2spl!4v1737563177023!5m2!1suk!2spl"
-                            width="605" height="480" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+
+                    <iframe class="contacts-section__map-style"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475609857368!2d30.772648476064045!3d50.506716783311504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwg0KPQutGA0LDRl9C90LAsIDA3NDAw!5e0!3m2!1suk!2spl!4v1737563177023!5m2!1suk!2spl"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                     <div class="contacts-section__form">
                         <h3 class="contacts-section__text">Запишіться <span
                                 class="contacts-section__accent">безкоштовно</span>
@@ -283,12 +334,12 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
 
 
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="conteiner">
             <div class="footer__conteiner">
                 <nav class="footer__nav">
@@ -316,38 +367,50 @@
                                 <br> вул. Тараса Шевченка 5</a></li>
 
                         <div class="footer__link-icon">
-                            <li>
-                                <a href="">
-                                    <svg class="footer__icon" width="32" height="32">
-                                        <use href="./img/icons-defs.svg#icon-Phone"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <svg class="footer__icon" width="32" height="32">
-                                        <use href="./img/icons-defs.svg#icon-Facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <svg class="footer__icon" width="32" height="32">
-                                        <use href="./img/icons-defs.svg#icon-Instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
+                            <a href="">
+                                <svg class="footer__icon" width="32" height="32">
+                                    <use href="./img/icons-defs.svg#icon-Phone"></use>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg class="footer__icon" width="32" height="32">
+                                    <use href="./img/icons-defs.svg#icon-Facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg class="footer__icon" width="32" height="32">
+                                    <use href="./img/icons-defs.svg#icon-Instagram"></use>
+                                </svg>
+                            </a>
                         </div>
                     </ul>
-                    <div class="footer__info">
-                        <a class="footer__terms" href="">Політика конфіденційності</a>
-                        <p class="footer__copyright">&copy; 2022 Дані захищені</p>
-                    </div>
-                </address>
-            </div>
-    </footer> -->
 
-    <!-- <div class="backdrop is-hidden">
+                </address>
+                <div class="footer__info">
+                    <a class="footer__terms" href="">Політика конфіденційності</a>
+                    <div class="footer__info-icon">
+                        <a href="">
+                            <svg class="footer__icon" width="32" height="32">
+                                <use href="./img/icons-defs.svg#icon-Phone"></use>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg class="footer__icon" width="32" height="32">
+                                <use href="./img/icons-defs.svg#icon-Facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg class="footer__icon" width="32" height="32">
+                                <use href="./img/icons-defs.svg#icon-Instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="footer__copyright">&copy; 2022 Дані захищені</p>
+                </div>
+            </div>
+    </footer>
+
+    <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal__button-close modal-btn-close" type="button">
                 <svg class="footer__icon" width="32" height="32">
@@ -373,7 +436,7 @@
                 <input class="contact-form__input modal__input" type="email" id="uzer-email" name="uzer-email"
                     placeholder="Ваша електронна пошта" pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                     title="Формат: jsmith@gmail.com" required>
-                <button class="button button-form" type="submit">Записатись безкоштовно</button>
+                <button class="modal__button button button-form" type="submit">Записатись безкоштовно</button>
                 <p class="contact-form__terms">Натискаючи на кнопку я погоджуюсь <a class="contact-form__link" href="">з
                         політикою
                         конфіденційності</a></p>
@@ -381,12 +444,13 @@
 
 
         </div>
-    </div> -->
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/swiper.js"></script>
+    <script src="./js/formats-slider.js"></script>
 
 </body>
 
